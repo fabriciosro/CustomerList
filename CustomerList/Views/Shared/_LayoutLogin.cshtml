@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <partial name="_Head" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
+      @*<partial name="_Brand" />*@
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <partial name="_CookieConsentPartial" />
+    <main role="main" class="pb-3">
+      @RenderBody()
+    </main>
+  </div>
+
+  <partial name="_Footer" />
+  <partial name="_Scripts" />
+
+  @RenderSection("Scripts", required: false)
+</body>
+</html>
